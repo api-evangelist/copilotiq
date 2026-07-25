@@ -1,8 +1,26 @@
 aid: copilotiq
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/copilotiq.png
 name: CopilotIQ
-description: 'CopilotIQ is a company surfaced as a portfolio company of bessemer-venture-partners, softbank-vision-fund
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'CopilotIQ is a Nashville, Tennessee remote patient monitoring and telehealth
+  company, founded in 2021, that delivers AI-driven chronic-condition management to seniors
+  and Medicare members living with type 2 diabetes and hypertension. Through connected
+  in-home devices, predictive analytics, and clinical automation it captures daily biometric
+  readings and pairs them with weekly nurse coaching to catch anomalies early, reduce
+  hospitalizations, and lower costs for health plans and providers. In October 2024 CopilotIQ
+  merged with in-home care company Biofourmis. It was surfaced as a portfolio company of
+  Bessemer Venture Partners and the SoftBank Vision Fund. CopilotIQ operates as a clinical
+  care service and does not publish a public developer API or documentation surface.'
 url: https://raw.githubusercontent.com/api-evangelist/copilotiq/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Healthcare
+- Remote Patient Monitoring
+- Telehealth
+- Chronic Disease Management
+- Digital Health
+- Medicare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/copilotiq-domain-security.yml
 - type: Website
   url: https://copilotiq.com/
+- type: Support
+  url: https://copilotiq.com/contact-us/
+- type: PrivacyPolicy
+  url: https://copilotiq.com/privacy-policy/
+- type: TermsOfService
+  url: https://copilotiq.com/terms-of-use/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
